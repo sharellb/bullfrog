@@ -7,5 +7,77 @@
 @import "variables";
 
 body {
-  // background: red;
+  /*background: red;*/
+}
+
+$bullfrog_green: #668134;
+
+
+.above-header {
+	background: #000000;
+	height: 40px;
+}
+
+#main-nav {
+	a {
+		color: white;
+		text-decoration: none;
+		line-height: 40px;
+	}
+}
+
+#top {
+	background: $bullfrog_green;
+	height: 175px;
+}
+
+.logo {
+	a {
+		font-family: Georgia;
+		font-size: 72px;
+		color: white;
+		text-decoration: none;
+		left: 20px;
+		top: 84px;
+		position: absolute;
+	}
+}
+
+.article-title {
+	font-size: 36px;
+	font-family: Georgia;
+	color: $bullfrog_green;
+}
+
+article p {
+	line-height: 170%;
+	font-family: Arial;
+}
+
+h2, h3 {
+	font-size: 20px;
+	color: $bullfrog_green;
+}
+
+.content-center {
+	a {
+		color: $bullfrog_green;
+		text-decoration: none;
+		font-family: Arial;
+	}
+}
+.read-more {
+	color: $bullfrog_green;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+footer {
+	background: black;
+	height: 150px;
+}
+
+footer p {
+	color: white;
+	font-type: Abel;
 }
