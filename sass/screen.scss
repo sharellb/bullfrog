@@ -23,13 +23,19 @@ $bullfrog_green: #668134;
 		color: white;
 		text-decoration: none;
 		line-height: 40px;
+		padding: 0 24px 0 24px;
+		font-size: 14px;
 	}
 }
 
 #top {
-	background: $bullfrog_green;
+	background: $bullfrog_green url(../images/bullfrog-header.png) no-repeat right center;
+
 	height: 175px;
+
 }
+
+
 
 .logo {
 	a {
@@ -43,6 +49,14 @@ $bullfrog_green: #668134;
 	}
 }
 
+.content-wrap {
+	position: relative;
+}
+
+.content {
+	position: absolute;
+	left:0;
+}
 .article-title {
 	font-size: 36px;
 	font-family: Georgia;
@@ -60,12 +74,19 @@ h2, h3 {
 }
 
 .content-center {
+
 	a {
 		color: $bullfrog_green;
 		text-decoration: none;
 		font-family: Arial;
 	}
+	
 }
+
+.content-right {
+
+}
+
 .read-more {
 	color: $bullfrog_green;
 	text-decoration: none;
@@ -79,5 +100,4 @@ footer {
 
 footer p {
 	color: white;
-	font-type: Abel;
 }

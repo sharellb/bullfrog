@@ -71,10 +71,12 @@ body {
   color: white;
   text-decoration: none;
   line-height: 40px;
+  padding: 0 24px 0 24px;
+  font-size: 14px;
 }
 
 #top {
-  background: #668134;
+  background: #668134 url(../images/bullfrog-header.png) no-repeat right center;
   height: 175px;
 }
 
@@ -86,6 +88,15 @@ body {
   left: 20px;
   top: 84px;
   position: absolute;
+}
+
+.content-wrap {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 0;
 }
 
 .article-title {
@@ -123,5 +134,4 @@ footer {
 
 footer p {
   color: white;
-  font-type: Abel;
 }
