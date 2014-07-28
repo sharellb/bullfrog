@@ -7,8 +7,6 @@
 @import "variables";
 
 
-$bullfrog_green: #668134;
-$frog_sans:  Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 @mixin froglinks($color) {
 	display: block;
@@ -26,11 +24,23 @@ $frog_sans:  Arial, "Helvetica Neue", Helvetica, sans-serif;
 	float: left;
 }
 
-
-h2, h3 {
+@mixin frogheaders($bottom) {
 	font-size: 20px;
 	color: $bullfrog_green;
-	margin-bottom: 24px ;
+	margin-bottom: 30px ;
+}
+
+#page {
+	max-width: 1225px;
+	margin: 0 auto;
+}
+
+h2 {
+	@include frogheaders(30px);
+}
+
+h3 {
+	@include frogheaders(40px);
 }
 
 .above-header {
@@ -52,6 +62,10 @@ h2, h3 {
 	background: $bullfrog_green url(../images/bullfrog-header.png) no-repeat right center;
 	height: 175px;
 	margin-bottom: 50px;
+	a {
+		margin-top: 150px;
+		padding-left: 20px;
+	}
 
 }
 
@@ -62,9 +76,6 @@ h2, h3 {
 		font-size: 72px;
 		color: white;
 		text-decoration: none;
-		left: 20px;
-		top: 84px;
-		position: absolute;
 	}
 }
 
@@ -72,12 +83,14 @@ h2, h3 {
 	font-size: 36px;
 	font-family: Georgia;
 	color: $bullfrog_green;
+	margin-bottom: 10px;
 }
 
 
 #content {
-	width: 578px;
+	width: 560px;
 	float: left;
+	padding-left: 20px;
 }
 
 section.content-center, 
@@ -97,7 +110,7 @@ article p {
 
 section.content-right {
 	p {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 

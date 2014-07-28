@@ -65,10 +65,21 @@ section.content-right {
   float: left;
 }
 
-h2, h3 {
+#page {
+  max-width: 1225px;
+  margin: 0 auto;
+}
+
+h2 {
   font-size: 20px;
   color: #668134;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #668134;
+  margin-bottom: 30px;
 }
 
 .above-header {
@@ -89,26 +100,29 @@ h2, h3 {
   height: 175px;
   margin-bottom: 50px;
 }
+#top a {
+  margin-top: 150px;
+  padding-left: 20px;
+}
 
 .logo a {
   font-family: Georgia;
   font-size: 72px;
   color: white;
   text-decoration: none;
-  left: 20px;
-  top: 84px;
-  position: absolute;
 }
 
 .article-title {
   font-size: 36px;
   font-family: Georgia;
   color: #668134;
+  margin-bottom: 10px;
 }
 
 #content {
-  width: 578px;
+  width: 560px;
   float: left;
+  padding-left: 20px;
 }
 
 section.content-center a,
@@ -130,7 +144,7 @@ article p {
 }
 
 section.content-right p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer {
