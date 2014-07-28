@@ -6,12 +6,32 @@
 @import "compass/reset";
 @import "variables";
 
-body {
-  /*background: red;*/
-}
 
 $bullfrog_green: #668134;
+$frog_sans:  Arial, "Helvetica Neue", Helvetica, sans-serif;
 
+@mixin froglinks($color) {
+	display: block;
+	color: $color;
+	margin-bottom: 24px;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+%quarter-col {
+	margin: 0 24px;
+	width: 267px;
+	float: left;
+}
+
+
+h2, h3 {
+	font-size: 20px;
+	color: $bullfrog_green;
+	margin-bottom: 24px ;
+}
 
 .above-header {
 	background: #000000;
@@ -48,61 +68,42 @@ $bullfrog_green: #668134;
 	}
 }
 
-.content-wrap {
-	position: relative;
-}
-
-#content {
-	width: 578px;
-	float: left;
-}
 .article-title {
 	font-size: 36px;
 	font-family: Georgia;
 	color: $bullfrog_green;
 }
 
-article p {
-	line-height: 170%;
-	font-family: Arial;
-}
 
-h2, h3 {
-	font-size: 20px;
-	color: $bullfrog_green;
-}
-
-
-
-%quarter-col {
-	margin: 0 24px;
-	width: 267px;
+#content {
+	width: 578px;
 	float: left;
 }
 
 section.content-center, 
 section.content-right{
 	@extend %quarter-col;
+	a {
+		@include froglinks($bullfrog_green);
+	}
 }
 
 
-.content-center 
-	{
-		a {
-			color: $bullfrog_green;
-			text-decoration: none;
-			font-family: Arial;
-		}
-
-}
-
-.read-more {
-	color: $bullfrog_green;
-	text-decoration: none;
+article p {
+	line-height: 170%;
 	font-family: Arial;
+	margin-bottom: 25px;
 }
+
+section.content-right {
+	p {
+		font-size: 12px;
+	}
+}
+
 
 footer {
+	clear: both;
 	background: black;
 	height: 150px;
 }

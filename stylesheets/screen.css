@@ -58,8 +58,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-body {
-  /*background: red;*/
+section.content-center,
+section.content-right {
+  margin: 0 24px;
+  width: 267px;
+  float: left;
+}
+
+h2, h3 {
+  font-size: 20px;
+  color: #668134;
+  margin-bottom: 24px;
 }
 
 .above-header {
@@ -91,8 +100,10 @@ body {
   position: absolute;
 }
 
-.content-wrap {
-  position: relative;
+.article-title {
+  font-size: 36px;
+  font-family: Georgia;
+  color: #668134;
 }
 
 #content {
@@ -100,42 +111,30 @@ body {
   float: left;
 }
 
-.article-title {
-  font-size: 36px;
-  font-family: Georgia;
+section.content-center a,
+section.content-right a {
+  display: block;
   color: #668134;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+section.content-center a:hover,
+section.content-right a:hover {
+  text-decoration: underline;
 }
 
 article p {
   line-height: 170%;
   font-family: Arial;
+  margin-bottom: 25px;
 }
 
-h2, h3 {
-  font-size: 20px;
-  color: #668134;
-}
-
-section.content-center,
-section.content-right {
-  margin: 0 24px;
-  width: 267px;
-  float: left;
-}
-
-.content-center a {
-  color: #668134;
-  text-decoration: none;
-  font-family: Arial;
-}
-
-.read-more {
-  color: #668134;
-  text-decoration: none;
-  font-family: Arial;
+section.content-right p {
+  font-size: 12px;
 }
 
 footer {
+  clear: both;
   background: black;
   height: 150px;
 }
