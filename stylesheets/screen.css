@@ -78,6 +78,7 @@ body {
 #top {
   background: #668134 url(../images/bullfrog-header.png) no-repeat right center;
   height: 175px;
+  margin-bottom: 50px;
 }
 
 .logo a {
@@ -94,9 +95,9 @@ body {
   position: relative;
 }
 
-.content {
-  position: absolute;
-  left: 0;
+#content {
+  width: 578px;
+  float: left;
 }
 
 .article-title {
@@ -113,6 +114,13 @@ article p {
 h2, h3 {
   font-size: 20px;
   color: #668134;
+}
+
+section.content-center,
+section.content-right {
+  margin: 0 24px;
+  width: 267px;
+  float: left;
 }
 
 .content-center a {
