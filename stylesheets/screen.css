@@ -58,11 +58,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/*$breakpoint-medium-width: max-width 768px;*/
 section.content-center,
 section.content-right {
-  margin: 0 24px;
-  width: 267px;
+  width: 25%;
   float: left;
+  margin: 0 24px;
 }
 
 #page {
@@ -106,21 +107,23 @@ h3 {
   text-decoration: none;
 }
 
-article .article-title {
+#content {
+  width: 50%;
+  	/*@include breakpoint($breakpoint-medium-width) {
+  		width: 75%;
+  	}
+  */
+  float: left;
+}
+#content article .article-title {
   font-size: 36px;
   color: #668134;
   margin-bottom: 10px;
 }
-article p {
+#content article p {
   line-height: 170%;
   font-family: Arial;
   margin-bottom: 25px;
-}
-
-#content {
-  width: 560px;
-  float: left;
-  padding-left: 20px;
 }
 
 section.content-center a,

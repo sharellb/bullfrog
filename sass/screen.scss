@@ -5,8 +5,9 @@
 
 @import "compass/reset";
 @import "variables";
+@import 'jeet/index';
 
-
+/*$breakpoint-medium-width: max-width 768px;*/
 
 @mixin froglinks($color) {
 	display: block;
@@ -19,9 +20,9 @@
 }
 
 %quarter-col {
-	margin: 0 24px;
-	width: 267px;
+	width: 25%;
 	float: left;
+	margin: 0 24px;
 }
 
 @mixin frogheaders($bottom) {
@@ -72,23 +73,28 @@ h3 {
 
 }
 
-article {
-	.article-title {
-		font-size: 36px;
-		color: $bullfrog_green;
-		margin-bottom: 10px;
-	}
-	p {
-		line-height: 170%;
-		font-family: Arial;
-		margin-bottom: 25px;
-	}
-}
+
 
 #content {
-	width: 560px;
+	width: 50%;
+	/*@include breakpoint($breakpoint-medium-width) {
+		width: 75%;
+	}
+*/
 	float: left;
-	padding-left: 20px;
+	article {
+		.article-title {
+			font-size: 36px;
+			color: $bullfrog_green;
+			margin-bottom: 10px;
+		}
+		p {
+			line-height: 170%;
+			font-family: Arial;
+			margin-bottom: 25px;
+		}
+	}
+
 }
 
 section.content-center, 
