@@ -72,13 +72,18 @@ h3 {
 
 }
 
-
-.article-title {
-	font-size: 36px;
-	color: $bullfrog_green;
-	margin-bottom: 10px;
+article {
+	.article-title {
+		font-size: 36px;
+		color: $bullfrog_green;
+		margin-bottom: 10px;
+	}
+	p {
+		line-height: 170%;
+		font-family: Arial;
+		margin-bottom: 25px;
+	}
 }
-
 
 #content {
 	width: 560px;
@@ -94,28 +99,20 @@ section.content-right{
 	}
 }
 
-
-article p {
-	line-height: 170%;
-	font-family: Arial;
-	margin-bottom: 25px;
-}
-
 section.content-right {
 	p {
 		font-size: 14px;
 	}
 }
 
-
 footer {
 	clear: both;
 	background: black;
 	height: 150px;
+	p {
+		color: white;
+		padding: 20px;
+		font-family: Arial;
+	}
 }
 
-footer p {
-	color: white;
-	padding: 20px;
-	font-family: Arial;
-}

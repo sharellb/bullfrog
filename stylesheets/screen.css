@@ -106,10 +106,15 @@ h3 {
   text-decoration: none;
 }
 
-.article-title {
+article .article-title {
   font-size: 36px;
   color: #668134;
   margin-bottom: 10px;
+}
+article p {
+  line-height: 170%;
+  font-family: Arial;
+  margin-bottom: 25px;
 }
 
 #content {
@@ -130,12 +135,6 @@ section.content-right a:hover {
   text-decoration: underline;
 }
 
-article p {
-  line-height: 170%;
-  font-family: Arial;
-  margin-bottom: 25px;
-}
-
 section.content-right p {
   font-size: 14px;
 }
@@ -145,7 +144,6 @@ footer {
   background: black;
   height: 150px;
 }
-
 footer p {
   color: white;
   padding: 20px;
