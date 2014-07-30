@@ -29,6 +29,15 @@
   }
 }
 
+%half-col {
+  @include col(1/2);
+  @include box-sizing(border-box);
+  @include breakpoint ($breakpoint-medium-width) {
+    @include col(1/1);
+    padding: 24px;
+  }
+}
+
 // Main styles
 h2 {
   font-size: 20px;
@@ -76,12 +85,7 @@ header#top {
 }
 
 #content {
-  @include col(2/4);
-  @include box-sizing(border-box);
-  @include breakpoint ($breakpoint-medium-width) {
-    @include col(1/1);
-    padding: 24px;
-  }
+  @extend %half-col;
 }
 
 article {
@@ -97,15 +101,23 @@ article {
   }
 }
 
-section.content-center,
-section.content-right {
+.content-center #featured a,
+.content-center #related a{
   @extend %quarter-col;
-  a {
-    @include froglinks($froggreen);
-  }
+  @include froglinks($froggreen);
+  border: 4px outset;
+  padding: 2px;
+  margin: 2px;
 }
 
-section.content-center {
+
+section.content-right article .teaser-list,
+section.content-center a, {
+  @include col(1/2);
+  @include box-sizing(border-box);
+}
+
+section.content-center{
   ul {
     font-family: $frogsans;
     li {
@@ -113,6 +125,9 @@ section.content-center {
         @include froglinks($froggreen);
       }
     }
+  }
+  .read-more {
+    @include froglinks($froggreen);
   }
 }
 
@@ -127,6 +142,9 @@ section.content-right {
   h3 {
     @extend h2;
     margin-bottom: 12px;
+  }
+  .read-more {
+    @include froglinks($froggreen);
   }
 }
 
